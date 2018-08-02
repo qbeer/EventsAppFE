@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+  $primary: mat-palette($mat-orange,200);
+  $accent: mat-palette($mat-yellow,200);
+
+  @font-face {
+    font-family: 'Arvo';
+    font-display: auto;
+    src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  }
+
+  $theme: mat-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);
