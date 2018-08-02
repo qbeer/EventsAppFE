@@ -3,15 +3,15 @@
     <mat-icon>more_vert</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>
+    <button routerLink="/event" mat-menu-item>
       <mat-icon>event</mat-icon>
-      <span>Create events</span>
+      <span>Create event</span>
     </button>
-    <button mat-menu-item >
+    <button routerLink="/calendar" mat-menu-item >
       <mat-icon>event_note</mat-icon>
-      <span>Calendars</span>
+      <span>Calendar</span>
     </button>
-    <button mat-menu-item>
+    <button routerLink="/about" mat-menu-item>
       <mat-icon>help</mat-icon>
       <span>About</span>
     </button>
