@@ -6,7 +6,7 @@ import { MainModule } from './main/main.module';
 
 
 const routes: Routes = [
-  { path: '*', redirectTo: '/calendar', pathMatch: 'full' },
+  { path: '', redirectTo: '/calendar', pathMatch: 'full' },
   { path: 'event', component: EventsGridComponent },
   { path: 'calendar', component: EventsGridComponent },
   { path: 'about', component: AboutComponent }
