@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ListEventsService } from '../services/list-events.service';
 import { Subscription } from 'rxjs';
+import { PageEvent } from '@angular/material';
 
 @Component({
   selector: 'app-events-grid',
@@ -9,6 +10,7 @@ import { Subscription } from 'rxjs';
 })
 export class EventsGridComponent implements OnInit, OnDestroy {
 
+  public pageEvents: PageEvent;
   public events: Event[] = [];
   private eventsSub: Subscription;
 
