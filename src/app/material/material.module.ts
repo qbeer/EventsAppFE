@@ -9,7 +9,8 @@ import {
   MatIconModule,
   MatCardModule,
   MatGridListModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatListModule
 } from '@angular/material';
 
 @NgModule({
@@ -23,7 +24,8 @@ import {
     MatIconModule,
     MatCardModule,
     MatGridListModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatListModule
   ],
   exports: [
     MatButtonModule,
@@ -34,6 +36,7 @@ import {
     MatCardModule,
     MatGridListModule,
     MatPaginatorModule,
+    MatListModule,
     BrowserAnimationsModule
   ],
   declarations: []
