@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Event } from '../../services/event.model';
 import * as moment from 'moment';
 
 @Component({
