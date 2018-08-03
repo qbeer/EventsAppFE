@@ -2,14 +2,10 @@
 @include mat-core();
 $primary: mat-palette($mat-orange, 200);
 $accent: mat-palette($mat-yellow, 200);
-@font-face {
-    font-family: 'Arvo';
-    font-display: auto;
-    src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-}
 
 @media only screen and(min-width: 600px) {
     body {
+        font-size: 14px;
         margin-left: auto;
         margin-right: auto;
         max-width: 600px;
@@ -17,7 +13,8 @@ $accent: mat-palette($mat-yellow, 200);
 }
 
 body {
-    background-color: rgba(247, 238, 104, 0.432);
+    background-color: rgba(245, 229, 13, 0.432);
+    font-size: 13px;
 }
 
 $theme: mat-light-theme($primary, $accent);

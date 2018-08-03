@@ -1,11 +1,11 @@
 {
   "name": "MakeEvents",
   "short_name": "MakeEvents",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#ed0c0c",
+  "background_color": "#f5e60f",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "/calendar",
   "icons": [
     {
       "src": "assets/icons/android-icon-72x72.png",
