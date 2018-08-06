@@ -10,7 +10,11 @@ import {
   MatCardModule,
   MatGridListModule,
   MatPaginatorModule,
-  MatListModule
+  MatListModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 } from '@angular/material';
 
 @NgModule({
@@ -25,7 +29,11 @@ import {
     MatCardModule,
     MatGridListModule,
     MatPaginatorModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   exports: [
     MatButtonModule,
@@ -37,7 +45,11 @@ import {
     MatGridListModule,
     MatPaginatorModule,
     MatListModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   declarations: []
 })

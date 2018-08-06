@@ -1,0 +1,20 @@
+.add-event {
+    background-color: rgba(255, 255, 255, 0.952);
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.add-event-title {
+    margin-left: 3%;
+}
+
+.add-event-form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}

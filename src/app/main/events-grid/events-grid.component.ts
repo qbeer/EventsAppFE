@@ -1,6 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ListEventsService } from '../services/list-events.service';
-import { Subscription } from 'rxjs';
 import { PageEvent } from '@angular/material';
 
 @Component({
@@ -8,26 +7,21 @@ import { PageEvent } from '@angular/material';
   templateUrl: './events-grid.component.html',
   styleUrls: ['./events-grid.component.css']
 })
-export class EventsGridComponent implements OnInit, OnDestroy {
+export class EventsGridComponent implements OnInit {
 
   public pageEvents: PageEvent;
   public events: Event[] = [];
-  private eventsSub: Subscription;
 
   constructor(private service: ListEventsService) { }
 
   ngOnInit() {
-    this.eventsSub = this.service.getEvents().subscribe((res) => {
+    this.service.getEvents().subscribe((res) => {
       if (res as Event[]) {
         this.events = res as Event[];
       } else {
         console.log('ERROR');
       }
     });
-  }
-
-  ngOnDestroy() {
-    this.eventsSub.unsubscribe();
   }
 
 }

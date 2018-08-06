@@ -1,0 +1,35 @@
+<mat-card class="add-event">
+    <mat-card-title class="add-event-title">Add new Event</mat-card-title>
+    <mat-card class="add-event-form">
+        <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <input matInput placeholder="Title" formControlName="title">
+            </mat-form-field>
+
+            <mat-form-field>
+                <textarea matInput placeholder="Description" formControlName="desc"></textarea>
+            </mat-form-field>
+
+            <mat-form-field>
+                <textarea matInput placeholder="Host" formControlName="host"></textarea>
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field>
+                <textarea matInput placeholder="Location" formControlName="location"></textarea>
+            </mat-form-field>
+
+            <mat-card-actions>
+                <button type="submit" [disabled]="!eventForm.valid">Submit</button>
+            </mat-card-actions>
+        </form>
+    </mat-card>
+    <div>
+        {{event | json}}
+    </div>
+</mat-card>

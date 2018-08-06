@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { environment } from '../../../environments/environment.prod';
+import { environment } from '../../../environments/environment';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
@@ -18,7 +18,7 @@ export class ListEventsService {
   }
 
   public getEvents(): Observable<Event[] | Error > {
-    return this.http.get<Event[]>(this.API_PATH).pipe(
+    return this.http.get<Event[]>(this.API_PATH + 'all').pipe(
       catchError((err) => this.handleError(err))
     );
   }
