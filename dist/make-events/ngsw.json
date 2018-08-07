@@ -9,7 +9,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.6f019161aa1eb94baf67.js",
+        "/main.c0aa1b564391f93b3b4a.js",
         "/polyfills.7b3dc3458d4c0f322356.js",
         "/runtime.a66f828dca56eeb90e02.js",
         "/styles.c347f9c1d5e4c62743fc.css",
@@ -22,6 +22,7 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
+        "/assets/background/event.png",
         "/assets/icons/android-icon-144x144.png",
         "/assets/icons/android-icon-192x192.png",
         "/assets/icons/android-icon-36x36.png",
@@ -61,6 +62,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "/assets/background/event.png": "301f55fb81c7712cade1388d5773e7ca53102318",
     "/assets/icons/android-icon-144x144.png": "0be6e045be41679390413c8c711dc6d1671497c5",
     "/assets/icons/android-icon-192x192.png": "31acf2220788df9c8b0cc3f1a78a3c462a4bac54",
     "/assets/icons/android-icon-36x36.png": "3a5bf524124abebb69a63837103fe6b11e006902",
@@ -95,8 +97,8 @@
     "/assets/icons/you.png": "1bc099e45d8a320daa0d3668a9d49554b433591c",
     "/assets/icons/youtube.png": "1bc099e45d8a320daa0d3668a9d49554b433591c",
     "/favicon.ico": "82733c9e90db52b0c8bee4d10863b253c7d43a48",
-    "/index.html": "4b9faf79cce6586767f5c4dd7fe4034fdd0a8646",
-    "/main.6f019161aa1eb94baf67.js": "c346998e84a149d989cd1d8bb91ae84b354ff01f",
+    "/index.html": "4ba061c745ac94e60063e37d70f2d8c8e965692b",
+    "/main.c0aa1b564391f93b3b4a.js": "5956b9549f0faffe2db27dd7ff85df67d53289a1",
     "/polyfills.7b3dc3458d4c0f322356.js": "c2a06244c47a7a0c0f01fc250c8ca5318d235d4b",
     "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
     "/styles.c347f9c1d5e4c62743fc.css": "eca09db3cbce94839e7c278dbe60ad0442cb9b10",
