@@ -1,0 +1,19 @@
+.select-dialog {
+    width: 75%;
+    margin: auto auto auto auto;
+    border-radius: 5%;
+    box-shadow: 4%;
+}
+
+.calendar-list a {
+    width: 85%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border-radius: 5px;
+    box-shadow: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: tomato;
+}

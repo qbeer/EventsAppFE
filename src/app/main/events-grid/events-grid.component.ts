@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, Input } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input, OnChanges, SimpleChange, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
 import { ListEventsService } from '../services/list-events.service';
 import { PageEvent, MatDialog } from '@angular/material';
 import { CalendarSelectDialogComponent } from '../calendar-select-dialog/calendar-select-dialog.component';
@@ -23,7 +23,10 @@ export class EventsGridComponent implements OnInit {
 
   public openDialog(): void {
     const dialogRef = this.dialog.open(CalendarSelectDialogComponent, {
-      width: '85%'
+      maxWidth: '610px',
+      minWidth: '300px',
+      width: '65%',
+      disableClose: true
     });
 
     dialogRef.componentInstance.idEmitter.subscribe(result => {

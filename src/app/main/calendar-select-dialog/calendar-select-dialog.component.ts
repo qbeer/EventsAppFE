@@ -9,6 +9,7 @@ import { ListCalendarsService } from '../services/list-calendars.service';
 export class CalendarSelectDialogComponent implements OnInit {
 
   public ids: string[];
+  public idMap: string[] = ['primary', 'random1', 'contacts', 'ünnep HU', 'ünnep FR'];
   @Output() idEmitter = new EventEmitter<string>();
 
   constructor(private service: ListCalendarsService) { }
@@ -26,6 +27,11 @@ export class CalendarSelectDialogComponent implements OnInit {
         this.ids = [];
       }
     });
+  }
+
+  mapTo(id: string): string {
+    const idx = this.ids.indexOf(id);
+    return this.idMap[idx];
   }
 
 }

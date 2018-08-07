@@ -17,6 +17,7 @@ export class EventComponent implements OnInit {
   }
 
   formatDate(date: string) {
+    console.log(date);
     return moment(date, moment.ISO_8601).format('MMMM Do YYYY, h:mm:ss a');
   }
 

@@ -1,5 +1,5 @@
-<mat-card>
-  <mat-list role="list">
-    <a mat-raised-button role="listitem" (click)="onSelect(id)" *ngFor="let id of ids;">{{id}}</a>
+<mat-card class="select-dialog">
+  <mat-list role="list" class="calendar-list">
+    <a mat-raised-button role="listitem" (click)="onSelect(id)" *ngFor="let id of ids;">{{mapTo(id)}}</a>
   </mat-list>
 </mat-card>
